@@ -6,11 +6,11 @@ name: deploy-container
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
     paths:
       - 'packages/container/**'
-  pull_request:
-    branches: [ master ]
+
 
 defaults:
   runs:
