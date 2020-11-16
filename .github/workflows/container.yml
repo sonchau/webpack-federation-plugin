@@ -9,12 +9,12 @@ on:
     branches:
       - master
     paths:
-      - 'packages/container/**'
+      - 'container/**'
 
 
 defaults:
   runs:
-    working-directory: packages/container
+    working-directory: container
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
