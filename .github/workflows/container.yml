@@ -1,8 +1,6 @@
 name: deploy-container
  
-on:
-  workflow_dispatch:
- 
+on: 
   push:
     branches:
       - main
@@ -21,9 +19,6 @@ jobs:
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm run build
-        env:
-          PRODUCTION_DOMAIN: ${‌{secrets.PRODUCTION_DOMAIN}}
- 
  
       - uses: ItsKarma/aws-cli@v1.70.0
         with: 
